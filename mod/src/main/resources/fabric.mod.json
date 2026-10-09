@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "earthcraft",
+  "version": "${version}",
+  "name": "EarthCraft",
+  "description": "Minecraft in the Google Photorealistic 3D Tiles world.",
+  "authors": ["GnoksAI"],
+  "license": "private",
+  
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.earthcraft.EarthCraft"],
+    "client": ["de.earthcraft.client.EarthCraftClient"]
+  },
+  "mixins": [
+    "earthcraft.mixins.json",
+    { "config": "earthcraft.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

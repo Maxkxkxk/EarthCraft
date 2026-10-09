@@ -1,0 +1,7 @@
+service/config.json
+service/cache/
+service/node_modules/
+service/*.log
+mod/build/
+mod/.gradle/
+mod/run/
